@@ -1,0 +1,34 @@
+{
+  "name": "bridgemutual-elrond",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "private-network": "ganache-cli -e 1000000 -l 10000000 -m \"guitar edit involve comic viable when gossip tail organ draw route blush solution strike bubble\" --time 1970-01-01T00:00:00Z",
+    "private-network-no-limit": "ganache-cli -i 80001 --chainId 80001 -e 1000000 --allowUnlimitedContractSize -l 10000000 -m \"guitar edit involve comic viable when gossip tail organ draw route blush solution strike bubble\" --time 1970-01-01T00:00:00Z",
+    "deploy-rinkeby": "truffle deploy --network rinkeby --reset --compile-all",
+    "deploy-ropsten": "truffle deploy --network ropsten --reset --compile-all",
+    "deploy-dev": "truffle deploy --network development --reset --compile-all",
+    "test-all": "npm run deploy-dev && truffle test --compile-none --migrations_directory test",
+    "test": "truffle test",
+    "test-no-deploy": "truffle test --compile-all --migrations_directory test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bridge-Mutual/bridgemutual-elrond.git"
+  },
+  "author": "BridgeMutual R&D Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bridge-Mutual/bridgemutual-elrond/issues"
+  },
+  "homepage": "https://github.com/Bridge-Mutual/bridgemutual-elrond#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/contracts-upgradeable": "^4.5.2",
+    "@truffle/hdwallet-provider": "^2.0.4",
+    "dotenv": "^16.0.0",
+    "ganache-cli": "^6.12.2",
+    "web3": "^1.7.1"
+  }
+}
