@@ -1,0 +1,1 @@
+/home/daelon/blockchain/bridgemutual-elrond/elrond-contract/wasm/target/wasm32-unknown-unknown/release/bmi_token_wasm.wasm: /home/daelon/blockchain/bridgemutual-elrond/elrond-contract/src/bmi-token.rs /home/daelon/blockchain/bridgemutual-elrond/elrond-contract/wasm/src/lib.rs

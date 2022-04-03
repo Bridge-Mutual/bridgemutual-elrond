@@ -7,11 +7,12 @@
 elrond_wasm_node::wasm_endpoints! {
     bmi_token
     (
+        callBack
         getDeposit
         getTokenIdentifier
         getTokenTotalSupply
+        issueTokens
         mintTokens
+        setLocalRoles
     )
 }
-
-elrond_wasm_node::wasm_empty_callback! {}
