@@ -1,0 +1,1 @@
+/home/daelon/blockchain/bridgemutual-elrond/elrond-contract/meta/target/debug/bmi-token-meta: /home/daelon/blockchain/bridgemutual-elrond/elrond-contract/meta/src/main.rs /home/daelon/blockchain/bridgemutual-elrond/elrond-contract/src/bmi-token.rs

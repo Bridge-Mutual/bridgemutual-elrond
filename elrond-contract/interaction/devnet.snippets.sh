@@ -1,4 +1,4 @@
-ALICE="${USERS}/alice.pem"
+ALICE="alice.pem"
 ADDRESS=$(erdpy data load --key=address-devnet)
 DEPLOY_TRANSACTION=$(erdpy data load --key=deployTransaction-devnet)
 

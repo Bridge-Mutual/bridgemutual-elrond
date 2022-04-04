@@ -46,6 +46,13 @@ pub trait BmiToken {
             .call_and_exit()
     }
 
+    #[payable("*")]
+    #[endpoint(transfer)]
+    fn transfer(&self, to: ManagedAddress, amount: BigUint) {
+        let token_identifier = &self.token_identifier().get();
+        self.send().direct(&to, token_identifier, 0, &amount, &[]);
+    }
+
     #[only_owner]
     #[payable("*")]
     #[endpoint(issueTokens)]
