@@ -14,5 +14,6 @@ elrond_wasm_node::wasm_endpoints! {
         issueTokens
         mintTokens
         setLocalRoles
+        transfer
     )
 }
